@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.combissimulator.Controller.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <!-- Contenedor VBox para organizar los elementos -->
+    <VBox alignment="CENTER" spacing="20.0">
+        <!-- Label para texto de bienvenida -->
+        <Label fx:id="welcomeText"/>
+    </VBox>
+
+    <!-- ImageView para mostrar la imagen del combi -->
+    <ImageView fx:id="combiImageView">
+        <image>
+            <Image url="@/com/example/combissimulator/assets/Combi.png"/>
+        </image>
+    </ImageView>
+
+    <!-- ImageView para mostrar la imagen del pasajero -->
+    <ImageView fx:id="pasajeroImageView">
+        <image>
+            <Image url="@/com/example/combissimulator/assets/pasajero.png"/>
+        </image>
+    </ImageView>
+</StackPane>
